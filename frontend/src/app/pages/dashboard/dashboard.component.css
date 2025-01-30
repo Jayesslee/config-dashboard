@@ -1,0 +1,85 @@
+.dashboard-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dashboard-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #1976d2;
+}
+
+.add-parameter-button {
+  margin-bottom: 20px;
+  width: 200px;
+  background-color: #1976d2;
+  color: white;
+  margin-right: 10px;
+}
+
+
+
+table.mat-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.mat-table th, table.mat-table td {
+  padding: 12px;
+  text-align: left;
+}
+
+table.mat-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+table.mat-table td {
+  border-bottom: 1px solid #ddd;
+}
+
+.action-button {
+  background-color: #1976d2;
+  color: white;
+  margin-right: 8px;
+  min-width: 100px;
+}
+
+
+.mat-error {
+  color: red;
+}
+
+.mat-form-field {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+/* Edit Dialog 页面样式 */
+.mat-dialog-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1976d2; /* 和登录页面的标题颜色一致 */
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.mat-dialog-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mat-form-field {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+button.mat-button {
+  width: 100px;
+  margin: 10px;
+}
+

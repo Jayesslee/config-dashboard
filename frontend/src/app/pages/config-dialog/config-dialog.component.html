@@ -1,0 +1,21 @@
+<h2 mat-dialog-title>Edit Parameter</h2>
+<mat-dialog-content>
+  <form [formGroup]="parameterForm">
+    <mat-form-field>
+      <input matInput formControlName="key" placeholder="Key" required />
+      <mat-error *ngIf="parameterForm.get('key')?.hasError('required')">
+        Name is required.
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="value" placeholder="Value" required />
+      <mat-error *ngIf="parameterForm.get('value')?.hasError('required')">
+        Value is required.
+      </mat-error>
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button (click)="onSave()" cdkFocusInitial>Save</button>
+</mat-dialog-actions>
