@@ -73,6 +73,13 @@ git clone https://github.com/Jayesslee/config-dashboard
 
 # Start backend services (MySQL, Redis, User & Config Service), all SQL shall be automatically excuted.
 cd backend
+
+cd user-service
+gradlew build
+
+cd config-service
+gradlew build
+
 docker-compose up -d
 
 # Start frontend (inside Angular project folder)
