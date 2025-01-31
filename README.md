@@ -80,7 +80,12 @@ gradlew build
 cd config-service
 gradlew build
 
+cd backend
 docker-compose up -d
+
+# Retart backend services (All data will be clean up)
+docker-compose down -v
+docker-compose up --build
 
 # Start frontend (inside Angular project folder)
 cd frontend
