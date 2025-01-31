@@ -83,7 +83,7 @@ gradlew build
 cd backend
 docker-compose up -d
 
-# Retart backend services (All data will be clean up)
+# Retart backend services (All data will be cleaned up)
 docker-compose down -v
 docker-compose up --build
 
@@ -92,7 +92,7 @@ cd frontend
 npm install
 npm run start
 
-# Use pre-defined accoun or register your own
+# Use pre-defined account or register your own
 # Only admin can delete configs on dashboard
 # UserName: admin
 # Password: 123456
